@@ -9,7 +9,7 @@ Interactive Timelines: Visual representations of my professional experiences and
 Continuous Improvement
 
 ![alt text](AboutMe.png)
-![alt text](AboutMe.png)
+![alt text](Projects.png)
 
 ## Available Scripts
 
