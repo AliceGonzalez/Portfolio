@@ -1,0 +1,106 @@
+.modal-content {
+  display: flex;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 80%;
+  max-height: 80%;
+  overflow-y: auto;
+  position: relative;
+  gap: 2rem; /* Add space between image and text */
+}
+
+.modal-image {
+  width: 50%; /* Set the image to take up half of the modal */
+  height: auto;
+  border-radius: 8px;
+}
+
+.modal-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50%; /* Set text section width to be equal to the image */
+}
+
+.modal-name {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.modal-description {
+  margin: 0.5rem 0;
+  color: #666;
+}
+
+.modal-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.modal-tech {
+  background-color: #2b4294a7;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center; /* Aligns the modal vertically in the center */
+    justify-content: center; /* Aligns the modal horizontally in the center */
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+    position: relative;
+    gap: 2rem; /* Add space between image and text */
+  }
+  .modal-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.modal-dot {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-dot.active {
+  background-color: #2b4294a7; /* Change this to match your design */
+}
+
+.modal-dot:hover {
+  background-color: #2b4294;
+}

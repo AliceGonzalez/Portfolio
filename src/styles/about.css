@@ -1,0 +1,210 @@
+:root {
+  --teal-color: #45baba;
+  --white-color: #ffffff;
+  --gray-color: #f4f4f4;
+  --dark-color: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-section {
+  padding: 8rem;
+  background-color: var(--gray-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  width: 100%;
+  background-color: var(--white-color);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.about-text h1 {
+  font-size: 2.8rem;
+  color: var(--dark-color);
+  margin-bottom: 1.5rem;
+}
+
+.about-text p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: var(--dark-color);
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.technologies-section {
+  margin-top: 2rem;
+  padding: 2rem;
+  /* background-color: var(--white-color); */
+  /* border-radius: 10px; */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  width: 100%;
+  max-width: 1250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.technologies-section h3 {
+  font-size: 2rem;
+  color: var(--dark-color);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.technologies-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  perspective: 1000px; /* Add perspective for 3D effect */
+}
+
+.tech-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px; /* Adjust size as needed */
+  height: 80px; /* Adjust size as needed */
+  margin: 0.5rem;
+  animation: float 3s ease-in-out infinite; /* Animation for floating effect */
+}
+
+.tech-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform-style: preserve-3d; /* Enable 3D transforms */
+  background: transparent; /* Remove any background */
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .about-image img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .technologies-section {
+    padding: 1rem;
+  }
+
+  .tech-icon {
+    width: 60px; /* Adjust size as needed for smaller screens */
+    height: 60px; /* Adjust size as needed for smaller screens */
+  }
+
+  .tech-image {
+    width: 100%;
+    height: 100%;
+  }
+}
+/* Add this CSS to your existing styles */
+
+.technologies-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  perspective: 1000px; /* Add perspective for 3D effect */
+}
+
+.tech-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: rotateX(51deg) rotateZ(43deg);
+  transform-style: preserve-3d;
+  border-radius: 32px;
+  box-shadow:
+    1px 1px 0 1px #ffffff00,
+    -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+    28px 28px 28px 0 rgba(34, 33, 81, 0.25);
+  transition:
+    0.4s ease-in-out transform,
+    0.4s ease-in-out box-shadow;
+}
+
+.tech-icon:hover {
+  transform: translate3d(0px, -16px, 0px) rotateX(51deg) rotateZ(43deg);
+  box-shadow:
+    1px 1px 0 1px #d61cc000,
+    -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+    54px 54px 28px -10px rgba(34, 33, 81, 0.15);
+}
+
+.tech-image {
+  width: 80px; /* Adjust size as needed */
+  height: 80px; /* Adjust size as needed */
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+  transform-style: preserve-3d; /* Ensure image remains within 3D container */
+}
+
+.tech-name {
+  font-size: 1.2rem;
+  color: var(--dark-color);
+}
+
+@media screen and (max-width: 768px) {
+  .tech-image {
+    width: 60px; /* Adjust size as needed for smaller screens */
+    height: 60px; /* Adjust size as needed for smaller screens */
+  }
+}

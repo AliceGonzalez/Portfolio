@@ -1,0 +1,58 @@
+/* src/styles/timeline.css */
+.timeline-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 150px;
+  position: relative;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.timeline-content {
+  position: relative;
+}
+
+.timeline-item {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  width: 5px;
+  background-color: #364e9c;
+  top: 0;
+  bottom: 0;
+  left: 0px;
+  margin-left: -3px;
+}
+
+.timeline-button {
+  background: none;
+  border: none;
+  color: #5166b1;
+  cursor: pointer;
+  font-size: 25px;
+  text-align: left;
+  padding: 30px;
+  width: 100%;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.timeline-button:hover {
+  background-color: #f0f0f0;
+}
+
+.timeline-details {
+  margin-left: 20px;
+  padding: 20px;
+  background: #d2b5a321;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}

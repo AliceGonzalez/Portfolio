@@ -1,0 +1,41 @@
+/* Ensure the footer is positioned at the bottom and centered */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure the footer stays above other content */
+  }
+  
+  .footer-container {
+    display: flex;
+    gap: 2rem; /* Space between icons */
+  }
+  
+  .contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit; /* Ensure icons inherit color from parent */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .contact-icon {
+    font-size: 2rem; /* Adjust icon size as needed */
+    color: black; /* Default icon color */
+    transition: color 0.3s; /* Smooth color transition on hover */
+  }
+  
+  .contact-link:hover .contact-icon {
+    color: #000000; /* Change icon color on hover to black */
+  }
+  
