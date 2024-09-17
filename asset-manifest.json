@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.e8a893f9.css",
-    "main.js": "/Portfolio/static/js/main.1d868657.js",
+    "main.js": "/Portfolio/static/js/main.98ad30de.js",
     "static/js/453.acca0757.chunk.js": "/Portfolio/static/js/453.acca0757.chunk.js",
     "static/media/morganbank_1.png": "/Portfolio/static/media/morganbank_1.6a6d383c2b6eb7b0c9d2.png",
     "static/media/ProfileAI.png": "/Portfolio/static/media/ProfileAI.ff03b6b5b62175d93582.png",
@@ -25,11 +25,11 @@
     "static/media/qsl.png": "/Portfolio/static/media/qsl.e17ab296b84284a67edc.png",
     "index.html": "/Portfolio/index.html",
     "main.e8a893f9.css.map": "/Portfolio/static/css/main.e8a893f9.css.map",
-    "main.1d868657.js.map": "/Portfolio/static/js/main.1d868657.js.map",
+    "main.98ad30de.js.map": "/Portfolio/static/js/main.98ad30de.js.map",
     "453.acca0757.chunk.js.map": "/Portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e8a893f9.css",
-    "static/js/main.1d868657.js"
+    "static/js/main.98ad30de.js"
   ]
 }
