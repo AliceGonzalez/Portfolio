@@ -18,7 +18,7 @@ const Navbar = () => {
       </div>
       <ul className="navbar-menu">
         <li className={activeLink === 'about' ? 'active' : ''}>
-          <Link to="/about" onClick={() => handleClick('about')}>About</Link>
+          <Link to="/" onClick={() => handleClick('about')}>About</Link>
         </li>
         <li className={activeLink === 'projects' ? 'active' : ''}>
           <Link to="/projects" onClick={() => handleClick('projects')}>Projects</Link>
