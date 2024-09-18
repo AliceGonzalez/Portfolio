@@ -1,4 +1,4 @@
-/* src/styles/resume.css */
+
 .resume-container {
     max-width: 800px;
     margin: 0 auto;
@@ -30,7 +30,7 @@
   .resume {
     display: flex;
     justify-content: center;
-    margin-top: 20px !important; /* Space above the PDF */
+    margin-top: 20px !important; 
   }
   .resume-images{
     padding: 60px;

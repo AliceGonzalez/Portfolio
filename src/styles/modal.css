@@ -1,109 +1,109 @@
 .modal-image {
-  width: 100%; /* Set the image to take up half of the modal */
-  height: 100%;
-  height: auto;
-  border-radius: 2px;
-}
-
-.modal-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 80%; /* Set text section width to be equal to the image */
-}
-
-.modal-name {
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
-}
-
-.modal-description {
-  margin: 0.6rem 0;
-  color: #666;
-}
-
-.modal-technologies {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.modal-tech {
-  background-color: #2b4294a7;
-  color: #fff;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  font-size: 0.9rem;
-}
-
-.modal-close {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: #333;
-}
-
-.modal-dots {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-.modal-dot {
-  width: 12px;
-  height: 12px;
-  margin: 0 5px;
-  background-color: #ccc;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.modal-dot.active {
-  background-color: #2b4294a7; /* Change this to match your design */
-}
-
-.modal-dot:hover {
-  background-color: #2b4294;
-}
-.modal-overlay {
+    width: 100%;
+    height: 100%;
+    height: auto;
+    border-radius: 2px;
+  }
+  
+  .modal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80%;
+  }
+  
+  .modal-name {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .modal-description {
+    margin: 0.6rem 0;
+    color: #666;
+  }
+  
+  .modal-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .modal-tech {
+    background-color: #2b4294a7;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .modal-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .modal-dot {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .modal-dot.active {
+    background-color: #2b4294a7;
+  }
+  
+  .modal-dot:hover {
+    background-color: #2b4294;
+  }
+  
+  .modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Overlay background */
+    background: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.modal-content {
-    display: flex; /* Use flexbox for layout */
-    width: 80%; /* Adjust modal width as needed */
-    max-width: 1200px; /* Set a max width for the modal */
-    margin: auto; /* Center the modal */
-    background: white; /* Background color */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
-}
-
-.modal-left {
-    flex: 1; /* Left section takes available space */
-    padding: 10px; /* Add padding */
-}
-
-.modal-right {
-    flex: 0 0 400px; /* Set a fixed width for the right section */
-    padding: 35px; /* Add padding */
-    overflow-y: auto; /* Allow scrolling if content overflows */
-}
-
-.modal-close {
-    cursor: pointer; /* Change cursor to pointer */
-    /* Add any additional styles for the close button */
-}
+  }
+  
+  .modal-content {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-left {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .modal-right {
+    flex: 0 0 400px;
+    padding: 35px;
+    overflow-y: auto;
+  }
+  
+  .modal-close {
+    cursor: pointer;
+  }

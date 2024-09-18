@@ -63,7 +63,7 @@ const Experience = () => {
     <div className="experience-container">
      {/* <img src={ExperienceTitle} alt="title" /> */}
      {/* <p className='project-title'>Experiences</p> */}
-      <VerticalTimeline>
+      <VerticalTimeline >
         {experiences.map((exp, index) => (
           <VerticalTimelineElement
             key={index}

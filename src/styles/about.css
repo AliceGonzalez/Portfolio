@@ -70,9 +70,6 @@ body {
 .technologies-section {
   margin-top: 2rem;
   padding: 2rem;
-  /* background-color: var(--white-color); */
-  /* border-radius: 10px; */
-  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
   width: 100%;
   max-width: 1250px;
   display: flex;
@@ -92,25 +89,25 @@ body {
   justify-content: center;
   gap: 1.5rem;
   flex-wrap: wrap;
-  perspective: 1000px; /* Add perspective for 3D effect */
+  perspective: 1000px; 
 }
 
 .tech-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80px; /* Adjust size as needed */
-  height: 80px; /* Adjust size as needed */
+  width: 80px; 
+  height: 80px; 
   margin: 0.5rem;
-  animation: float 3s ease-in-out infinite; /* Animation for floating effect */
+  animation: float 3s ease-in-out infinite; 
 }
 
 .tech-image {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  transform-style: preserve-3d; /* Enable 3D transforms */
-  background: transparent; /* Remove any background */
+  transform-style: preserve-3d; 
+  background: transparent; 
 }
 
 @keyframes float {
@@ -146,8 +143,8 @@ body {
   }
 
   .tech-icon {
-    width: 60px; /* Adjust size as needed for smaller screens */
-    height: 60px; /* Adjust size as needed for smaller screens */
+    width: 60px; 
+    height: 60px; 
   }
 
   .tech-image {
@@ -155,14 +152,13 @@ body {
     height: 100%;
   }
 }
-/* Add this CSS to your existing styles */
 
 .technologies-icons {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
   flex-wrap: wrap;
-  perspective: 1000px; /* Add perspective for 3D effect */
+  perspective: 1000px; 
 }
 
 .tech-icon {
@@ -190,11 +186,11 @@ body {
 }
 
 .tech-image {
-  width: 80px; /* Adjust size as needed */
-  height: 80px; /* Adjust size as needed */
+  width: 80px; 
+  height: 80px; 
   object-fit: contain;
   margin-bottom: 0.5rem;
-  transform-style: preserve-3d; /* Ensure image remains within 3D container */
+  transform-style: preserve-3d; 
 }
 
 .tech-name {
@@ -204,7 +200,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .tech-image {
-    width: 60px; /* Adjust size as needed for smaller screens */
-    height: 60px; /* Adjust size as needed for smaller screens */
+    width: 60px;
+    height: 60px; 
   }
 }
