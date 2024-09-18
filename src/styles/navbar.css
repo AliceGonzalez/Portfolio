@@ -18,31 +18,32 @@
   }
   
   .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0rem 2rem;
-    background-color: var(--old-rose);
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-    transition: background-color 0.3s ease-in-out;
-    height: 10vh;
-  }
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between logo and menu */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Add padding */
+    background-color: white; /* Background color */
+    position: fixed; /* Keep navbar fixed */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    z-index: 1000; /* Ensure it stays above other content */
+    max-width: 100%; /* Prevent overflow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+    
+}
   
-  .navbar-logo img {
-    max-height: 100%; /* Ensure the image does not exceed the navbar height */
-    max-width: 100%; /* Ensure the image does not exceed the navbar width */
-    height: auto; /* Maintain aspect ratio */
-    width: auto; /* Maintain aspect ratio */
-    display: block;
-  }
+.navbar-logo img {
+  max-height: 90px; /* Set a max height for the logo */
+  width: auto; /* Maintain aspect ratio */
+}
   
-  .navbar-menu {
-    list-style: none;
-    display: flex;
-    gap: 4rem;
-  }
+.navbar-menu {
+  display: flex; /* Use flexbox for menu items */
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
   
   .navbar-menu li a {
     color: var(--white-color);

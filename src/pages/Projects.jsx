@@ -18,12 +18,12 @@ const projects = [
     technologies: ['Java, Spring Boot, MySQL, React, H2 Server'],
     description: 'Developed a comprehensive money management application featuring front-end design, navigation, transaction operations, login/registration, and a ChatBox for user interactions. The application includes a Savings Tracker tool, allowing users to monitor and manage their finances. Once authenticated, users can submit transactions, view account details, and track their savings, providing a seamless and secure financial management experience.',
   },
-  {
-    name: 'Multi-Routes',
-    image: MultiRoute,
-    technologies: ['Angular, MySQL, Python'],
-    description: 'Developed a comprehensive transportation business solution aimed at optimizing routes for school buses and other transportation services. The software streamlines route planning and management, ensuring efficient and cost-effective operations. It provides real-time updates, route tracking, and scheduling to ensure safe and timely transportation for students. The solution is designed to enhance both operational efficiency and user experience, providing schools and transportation companies with the tools they need for effective route management',
-  },
+//   {
+//     name: 'Multi-Routes',
+//     image: MultiRoute,
+//     technologies: ['Angular, MySQL, Python'],
+//     description: 'Developed a comprehensive transportation business solution aimed at optimizing routes for school buses and other transportation services. The software streamlines route planning and management, ensuring efficient and cost-effective operations. It provides real-time updates, route tracking, and scheduling to ensure safe and timely transportation for students. The solution is designed to enhance both operational efficiency and user experience, providing schools and transportation companies with the tools they need for effective route management',
+//   },
   {
     name: 'Balancer',
     image: Balancer,
