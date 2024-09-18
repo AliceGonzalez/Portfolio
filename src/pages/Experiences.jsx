@@ -17,7 +17,7 @@ const experiences = [
     dates: 'Aug 2024 - Present',
      // Path to the logo image
     responsibilities: [
-      'Engineering a custom automated transportation optimization system to refine student pick-up and drop-off routes, minimizing driver waiting times and delays, which boosts operational efficiency and supports program enrollment growth.',
+      'Engineering a custom automated optimization system to refine transportation routes leading to  operational efficiency and supports business growth.',
       'Developing backend services in Java, creating efficient algorithms for route optimization, and managing data with MySQL, utilizing REST APIs for seamless integration.',
       'Building a responsive front-end interface with Angular to enhance user interaction and data visualization for the routing system and database administration.'
     ]

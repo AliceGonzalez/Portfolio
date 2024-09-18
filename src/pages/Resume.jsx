@@ -8,7 +8,6 @@ const Resume = () => {
   return (
     <div className="resume-container">
       {/* <img src={ ResumeTitle} alt='resume-title' className=''/> */}
-
       <div className="resume-images">
         <img src={resumePage1} alt="Resume Page 1" className="resume-page" />
         <img src={resumePage2} alt="Resume Page 2" className="resume-page" />
