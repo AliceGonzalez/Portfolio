@@ -31,7 +31,9 @@
   }
   
   .navbar-logo img {
-    height: 85px; /* Adjust the height as needed */
+    max-height: 100%; /* Ensure the image does not exceed the navbar height */
+    max-width: 100%; /* Ensure the image does not exceed the navbar width */
+    height: auto; /* Maintain aspect ratio */
     width: auto; /* Maintain aspect ratio */
     display: block;
   }
@@ -45,7 +47,7 @@
   .navbar-menu li a {
     color: var(--white-color);
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.5rem !important;
     padding: 0.5rem 1rem;
     transition: color 0.3s;
   }
@@ -159,13 +161,13 @@
   }
   
   .social-icon {
-    color: var(--white-color);
-    font-size: 1.5rem; /* Adjust icon size as needed */
+    color: black;
+    font-size: 2rem; /* Adjust icon size as needed */
     transition: color 0.3s;
   }
   
   .social-icon:hover {
-    color: var(--light-teal);
+    color: var(--white-color);
   }
   
   .navbar-toggle {

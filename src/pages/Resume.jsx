@@ -7,7 +7,7 @@ import ResumeTitle from '../assets/titles/resume.png';
 const Resume = () => {
   return (
     <div className="resume-container">
-      <img src={ ResumeTitle} alt='resume-title' className='resume-title'/>
+      {/* <img src={ ResumeTitle} alt='resume-title' className=''/> */}
 
       <div className="resume-images">
         <img src={resumePage1} alt="Resume Page 1" className="resume-page" />

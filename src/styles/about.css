@@ -16,7 +16,7 @@ body {
 }
 
 .about-section {
-  padding: 8rem;
+  padding: 9rem;
   background-color: var(--gray-color);
   min-height: 100vh;
   display: flex;

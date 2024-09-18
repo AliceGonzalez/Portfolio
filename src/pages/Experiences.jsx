@@ -61,21 +61,21 @@ const experiences = [
 const Experience = () => {
   return (
     <div className="experience-container">
-      <img src={ ExperienceTitle } alt= 'experience-title' />
+     {/* <img src={ExperienceTitle} alt="title" /> */}
+     {/* <p className='project-title'>Experiences</p> */}
       <VerticalTimeline>
         {experiences.map((exp, index) => (
           <VerticalTimelineElement
             key={index}
             className="vertical-timeline-element--work"
-            contentStyle={{ background: '#f9f9f9', color: '#333' }}
+            contentStyle={{ background: '#f9f9f9', color: '#' }}
             contentArrowStyle={{ borderRight: '7px solid #007bff' }}
-            date={exp.dates}
-            icon={<div className="geometric-icon"></div>} // Custom geometric icon
-            iconStyle={{ background: 'transparent', boxShadow: 'none' }} // Remove default background
+            iconStyle={{ background: '#FFF', color: '#fff' }}
+            icon={<img src={exp.logo} alt={`${exp.company} Logo`} className="company-logo" />}
           >
-            <img src={exp.logo} alt={`${exp.company} Logo`} className="company-logo-top" />
             <h3 className="vertical-timeline-element-title">{exp.company}</h3>
             <h4 className="vertical-timeline-element-subtitle">{exp.role}</h4>
+            <p className="employment-dates">{exp.dates}</p>
             <ul className="responsibilities-list">
               {exp.responsibilities.map((item, i) => (
                 <li key={i}>{item}</li>

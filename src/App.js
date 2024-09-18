@@ -7,6 +7,7 @@ import Experiences from "./pages/Experiences";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 import Education from "./pages/Education";
+import Footer from './components/Footer';
 
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/resume" element={<Resume />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };

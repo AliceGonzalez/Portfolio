@@ -10,6 +10,9 @@ const Navbar = () => {
   const handleClick = (link) => {
     setActiveLink(link);
   };
+  const handleEmailClick = () => {
+    alert('Email: alicegcodes@gmail.com'); // Show email address on click
+  };
 
   return (
     <nav className="navbar">
@@ -26,9 +29,9 @@ const Navbar = () => {
         <li className={activeLink === 'experiences' ? 'active' : ''}>
           <Link to="/experiences" onClick={() => handleClick('experiences')}>Experience</Link>
         </li>
-        <li className={activeLink === 'education' ? 'active' : ''}>
+        {/* <li className={activeLink === 'education' ? 'active' : ''}>
           <Link to="/education" onClick={() => handleClick('education')}>Education</Link>
-        </li>
+        </li> */}
         {/* <li className={activeLink === 'contact' ? 'active' : ''}>
           <Link to="/contact" onClick={() => handleClick('contact')}>Contact</Link>
         </li> */}

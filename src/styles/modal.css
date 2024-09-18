@@ -1,26 +1,15 @@
-.modal-content {
-  display: flex;
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 2rem;
-  max-width: 80%;
-  max-height: 80%;
-  overflow-y: auto;
-  position: relative;
-  gap: 2rem; /* Add space between image and text */
-}
-
 .modal-image {
-  width: 50%; /* Set the image to take up half of the modal */
+  width: 100%; /* Set the image to take up half of the modal */
+  height: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 2px;
 }
 
 .modal-info {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 50%; /* Set text section width to be equal to the image */
+  width: 80%; /* Set text section width to be equal to the image */
 }
 
 .modal-name {
@@ -29,7 +18,7 @@
 }
 
 .modal-description {
-  margin: 0.5rem 0;
+  margin: 0.6rem 0;
   color: #666;
 }
 
@@ -57,31 +46,8 @@
   cursor: pointer;
   color: #333;
 }
-.modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    align-items: center; /* Aligns the modal vertically in the center */
-    justify-content: center; /* Aligns the modal horizontally in the center */
-    z-index: 1000;
-  }
-  
-  .modal-content {
-    display: flex;
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 2rem;
-    max-width: 80%;
-    max-height: 80%;
-    overflow-y: auto;
-    position: relative;
-    gap: 2rem; /* Add space between image and text */
-  }
-  .modal-dots {
+
+.modal-dots {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
@@ -103,4 +69,41 @@
 
 .modal-dot:hover {
   background-color: #2b4294;
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Overlay background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    display: flex; /* Use flexbox for layout */
+    width: 80%; /* Adjust modal width as needed */
+    max-width: 1200px; /* Set a max width for the modal */
+    margin: auto; /* Center the modal */
+    background: white; /* Background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.modal-left {
+    flex: 1; /* Left section takes available space */
+    padding: 10px; /* Add padding */
+}
+
+.modal-right {
+    flex: 0 0 400px; /* Set a fixed width for the right section */
+    padding: 35px; /* Add padding */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+.modal-close {
+    cursor: pointer; /* Change cursor to pointer */
+    /* Add any additional styles for the close button */
 }

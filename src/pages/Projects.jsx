@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import '../styles/projects.css'; // Import the CSS file for styling
 import Modal from '../components/Modal'; // Import the Modal component
+import Type from '../components/Typing';
 
 import MorganBank from '../assets/projects/morganbank_1.png';
 import Balancer from '../assets/projects/balance_login_form.png';
 import MediForm from '../assets/projects/mediform_2.png';
-import Meme from '../assets/projects/meme_generator_1.png';
+import Meme from '../assets/projects/meme.png';
 import TekTrack from '../assets/projects/TekTrackUX.png';
 import MultiRoute from '../assets/projects/multuroute.png';
 import projectTitle from '../assets/titles/projects.png';
@@ -27,20 +28,20 @@ const projects = [
     name: 'Balancer',
     image: Balancer,
     technologies: ['Python, Django, MySQL, Docker'],
-    description: 'A real-time chat application with notification features.',
-  },
-  {
-    name: 'MediForm (in Progress)',
-    image: MediForm,
-    technologies: ['Angular, MySQL, Python'],
-    description: 'Developing an innovative application aimed at modernizing and streamlining medical processes. Developed independently, this app enhances medical services by enabling the screening of patient medical histories to determine the necessity of physical visits. It facilitates efficient healthcare management through features such as real-time tracking of form statuses, availability of electronic form templates, and support for multilingual accessibility.',
+    description: 'As part of a collaborative team, I played a key role in developing the front-end using React and Tailwind CSS, ensuring a responsive and user-friendly design. On the server side, I integrated components to create efficient endpoints for seamless communication with a PostgreSQL database,',
   },
   {
     name: 'Meme Generator',
     image: Meme,
     technologies: ['JavaScript, DOM, HTML, CSS'],
     description: 'A fun and easy-to-use tool that allows users to create custom memes by uploading an image URL and adding personalized text. The interface makes it simple to generate multiple memes with different layouts and styles. Users can quickly share their creations across social media or save them for later use, making it a great platform for both casual and creative meme enthusiasts.',
+  },  {
+    name: 'MediForm (in Progress)',
+    image: MediForm,
+    technologies: ['Angular, MySQL, Python'],
+    description: 'Developing an innovative application aimed at modernizing and streamlining medical processes. Developed independently, this app enhances medical services by enabling the screening of patient medical histories to determine the necessity of physical visits. It facilitates efficient healthcare management through features such as real-time tracking of form statuses, availability of electronic form templates, and support for multilingual accessibility.',
   },
+
   {
     name: 'TekTrack (in Progress)',
     image: TekTrack,
@@ -63,7 +64,8 @@ const Projects = () => {
 
   return (
     <div className="projects-container">
-      <img src={projectTitle} alt="ProjectTitle"/>
+      {/* <img src={projectTitle} alt="ProjectTitle"/> */}
+      <p className='project-title'>Projects</p>
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div
@@ -86,6 +88,7 @@ const Projects = () => {
           project={selectedProject} 
         />
       )}
+      <Type/>
     </div>
   );
 };

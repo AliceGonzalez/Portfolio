@@ -1,0 +1,26 @@
+
+.footer {
+    position: fixed;
+    background-color: #b0716788; /* Dark background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 20px 0; /* Padding for top and bottom */
+    width: 100%; /* Full width */
+    /* Remove margin-top: auto; */
+}
+
+.footer-content {
+    max-width: 800px; /* Max width for content */
+    margin: 0 auto; /* Center the content */
+    font-size: 18px;
+}
+
+.footer a {
+    color: #fff; /* White link color */
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Space between links */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
