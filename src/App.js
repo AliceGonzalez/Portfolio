@@ -11,9 +11,8 @@ import Education from "./pages/Education";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/Portfolio">
       <Navbar />
-      <About />
       <Routes>
         <Route path="/" element={<About />} />  
         <Route path="/about" element={<About />} />
