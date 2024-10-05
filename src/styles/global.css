@@ -1,0 +1,56 @@
+:root {
+    --teal-color: #45baba;
+    --light-teal: black;
+    --white-color: #ffffff;
+    --gray-color: #f4f4f4;
+    --dark-color: #333;
+    --old-rose: #B07167;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+}
+  
+a {
+    color: inherit;
+    text-decoration: none;
+}
+  
+a:hover {
+    text-decoration: underline;
+}
+  
+/* Add this to your existing global.css */
+.container {
+    max-width: 1200px; /* Set a max width for larger screens */
+    margin: 0 auto; /* Center the container */
+    padding: 0 1rem; /* Add some padding */
+}
+
+img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+body {
+    font-size: 16px; /* Base font size */
+}
+
+h1 {
+    font-size: 2rem; /* Scales with base font size */
+}
+
+h2 {
+    font-size: 1.5rem; /* Scales with base font size */
+}
+
+p {
+    font-size: 1rem; /* Scales with base font size */
+}

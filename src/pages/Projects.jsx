@@ -10,6 +10,7 @@ import Meme from '../assets/projects/meme.png';
 import TekTrack from '../assets/projects/TekTrackUX.png';
 import MultiRoute from '../assets/projects/multuroute.png';
 import projectTitle from '../assets/titles/projects.png';
+import Consulting from '../assets/projects/TekCodes.png'
 
 const projects = [
   {
@@ -17,6 +18,7 @@ const projects = [
     image: MorganBank,
     technologies: ['Java, Spring Boot, MySQL, React, H2 Server'],
     description: 'Developed a comprehensive money management application featuring front-end design, navigation, transaction operations, login/registration, and a ChatBox for user interactions. The application includes a Savings Tracker tool, allowing users to monitor and manage their finances. Once authenticated, users can submit transactions, view account details, and track their savings, providing a seamless and secure financial management experience.',
+    
   },
 //   {
 //     name: 'Multi-Routes',
@@ -28,7 +30,15 @@ const projects = [
     name: 'Balancer',
     image: Balancer,
     technologies: ['Python, Django, MySQL, Docker'],
-    description: 'As part of a collaborative team, I played a key role in developing the front-end using React and Tailwind CSS, ensuring a responsive and user-friendly design. On the server side, I integrated components to create efficient endpoints for seamless communication with a PostgreSQL database,',
+    description: ['As part of a collaborative team, I played a key role in developing the front-end using React and Tailwind CSS, ensuring a responsive and user-friendly design. On the server side, I integrated components to create efficient endpoints for seamless communication with a PostgreSQL database.',
+    <a href="https://example.com/project-link" target="_blank" rel="noopener noreferrer">View project</a>
+    ]
+  },
+  {
+    name: 'TekCodes Website',
+    image: Consulting,
+    technologies: ['WordPress'],
+    description: 'TekCodes is a WordPress website developed to showcase my skills in WordPress development, hosting, and deployment. This platform serves as a resource for businesses looking to enhance their digital presence through custom software solutions, featuring both front-end UX/UI design and back-end development.',
   },
   {
     name: 'Meme Generator',
@@ -48,6 +58,18 @@ const projects = [
     technologies: ['Angular, MySQL, Python'],
     description: 'A mobile app designed to assist new developers with the job and internship application process. TekTrack enables users to organize and manage their application journey on the go. The application features database management and user authentication, allowing users to input job details, track application statuses, and manage related notes. With its intuitive interface, users can easily update the status of their applications and stay organized throughout their job search journey.',
   },
+  {
+    name: 'MultiRoutes',
+    image: MultiRoute,
+    technologies: ['Python, Django, MySQL, Docker'],
+    description: 'As part of a collaborative team, I played a key role in developing the front-end using React and Tailwind CSS, ensuring a responsive and user-friendly design. On the server side, I integrated components to create efficient endpoints for seamless communication with a PostgreSQL database,',
+  },
+  {
+    name: 'Card Game',
+    image: Balancer,
+    technologies: ['Python, Django, MySQL, Docker'],
+    description: 'As part of a collaborative team, I played a key role in developing the front-end using React and Tailwind CSS, ensuring a responsive and user-friendly design. On the server side, I integrated components to create efficient endpoints for seamless communication with a PostgreSQL database,',
+  },
   // Add more projects as needed
 ];
 
@@ -64,8 +86,6 @@ const Projects = () => {
 
   return (
     <div className="projects-container">
-      {/* <img src={projectTitle} alt="ProjectTitle"/> */}
-      <p className='project-title'>Projects</p>
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div
@@ -88,7 +108,7 @@ const Projects = () => {
           project={selectedProject} 
         />
       )}
-      <Type/>
+      {/* <Type/> */}
     </div>
   );
 };

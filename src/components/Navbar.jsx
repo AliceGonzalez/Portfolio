@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'; // Import social media icons
 import '../styles/navbar.css'; // Link to the external CSS
-import LogoInitials from '../assets/images/Logo-Old-Rose.png';
+import LogoInitials from '../assets/images/Black Elegant Modern Name Initials Monogram Logo.png';
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState('about'); // State to manage active link

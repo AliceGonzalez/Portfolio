@@ -8,6 +8,7 @@ import ZipCode from '../assets/images/zipcode.png';
 import Omdena from '../assets/images/omdena.png';
 import CodeForPhilly from '../assets/images/codeforphilly.png';
 import ExperienceTitle from '../assets/titles/experiences.png';
+import Chop from '../assets/images/CHOP.png';
 
 const experiences = [
   {
@@ -55,6 +56,17 @@ const experiences = [
       'Resolved over 100 cases per month and managed a caseload of 50 cases per week on average; achieved these results by providing crisis intervention and delivering custom Disruptive Event Management (DEM).'
     ]
   },
+  {
+    company: 'Children Hospital of Philadelphia',
+    role: 'Certified Medical Assistant',
+    dates: 'Dec 2016 - Oct 2018',
+    logo: Chop, 
+    responsibilities: [
+      'Collaborated closely with pediatricians and healthcare providers to ensure the effective coordination of patient care, including scheduling follow-up appointments and referrals, and facilitating communication between patients, families, and healthcare teams.',
+      'Committed to ongoing professional development and training to stay updated on the latest pediatric healthcare practices and guidelines, demonstrating a dedication to delivering high-quality care to pediatric patients.',
+      'Diligently documented patient and guardian information, including chief complaints, medication histories, allergies, developmental assessments, lead screenings, travel histories, and tuberculosis screenings, maintaining accurate and comprehensive medical records.'
+    ]
+  }
 
 ];
 
