@@ -18,7 +18,7 @@ const projects = [
     image: MorganBank,
     technologies: ['Java, Spring Boot, MySQL, React, H2 Server'],
     description: 'Developed a comprehensive money management application featuring front-end design, navigation, transaction operations, login/registration, and a ChatBox for user interactions. The application includes a Savings Tracker tool, allowing users to monitor and manage their finances. Once authenticated, users can submit transactions, view account details, and track their savings, providing a seamless and secure financial management experience.',
-    link: 'https://github.com/AliceGonzalez/MorganBank',
+    link: 'https://alicegonzalez.github.io/MorganBank/',
   },
   {
     name: 'Balancer',
@@ -61,7 +61,7 @@ const projects = [
     image: MultiRoute,
     technologies: ['Python, Django, MySQL, Docker'],
     description: 'As part of a collaborative team, I played a key role in developing the front-end using React and Tailwind CSS, ensuring a responsive and user-friendly design. On the server side, I integrated components to create efficient endpoints for seamless communication with a PostgreSQL database,',
-    link: '',
+    link: 'https://github.com/AliceGonzalez/TekTrackOriginal',
   },
   // {
   //   name: 'Card Game',
