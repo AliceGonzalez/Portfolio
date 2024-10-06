@@ -19,6 +19,14 @@ const Modal = ({ isOpen, onClose, project }) => {
               <span key={index} className="modal-tech">{tech}</span>
             ))}
           </div>
+          <br />
+          <div>
+          {project.link && ( // Check if link exists
+              <a href={project.link} className="view-project-link" target="_blank" rel="noopener noreferrer">
+                View Project
+              </a>
+            )}
+          </div>
         </div>
       </div>
     </div>
